@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: riskora
+      POSTGRES_PASSWORD: riskora
+      POSTGRES_DB: riskora
+    ports:
+      - "5433:5432"
+    volumes:
+      - riskora_pgdata:/var/lib/postgresql/data
+
+volumes:
+  riskora_pgdata:

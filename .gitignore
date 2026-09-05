@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+ml/data/demo_transactions.csv
+ml/models/*.joblib
+ml/models/metrics.json
+audit/*.json
+*.db
+
+# Local environment - never commit real secrets
+.env
+
+# Runtime and generated files
+*.log
+*.egg-info/
+.env.*
+!.env.example
